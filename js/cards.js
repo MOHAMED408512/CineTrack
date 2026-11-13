@@ -37,7 +37,7 @@ else {
               <h2 class ="text-xl font-bold text-gray-1000">
                  ${card.title}
                   </h2> 
-                   <p class="text-gray-700">
+                   <p class="text-gray-700 text-gray-900 font-bold">
                    Annne : ${card.releaseYear}
                    </p>
                    <span class ="${color} rounded-lg px-3 py-2 text-center">

@@ -1,4 +1,4 @@
-import { getMovies } from "./api.js";
+import { jibMovietSeries } from "./api.js";
 import { jibCards } from "./cards.js";
 
 
@@ -22,7 +22,7 @@ let currentPage = 1
 async function startiii() {
     
     try {
-        allCards = await getMovies()
+        allCards = await jibMovietSeries()
         updatelPage() // 8cards per page
 makeFavorites(allCards) // show the saved favorites after a resfresh
     } catch (error) {

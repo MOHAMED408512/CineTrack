@@ -1,6 +1,6 @@
 const API_URL = "https://raw.githubusercontent.com/ouchad97/cinetrack-api/main/cinetrack-data.json";
 
-export async function getMovies() {
+export async function jibMovietSeries() {
 
     try {
         const istijabaDylData = await fetch(API_URL);
