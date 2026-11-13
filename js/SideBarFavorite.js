@@ -28,14 +28,14 @@ const count = favCards.reduce((total, card)=> {
 
 // nktbo lcount under title dyl favorites
 
-favoriteCount.textContent = count.movies +"  films " + count.series + "series"
+favoriteCount.textContent = count.movies  +    " : films         "       +        count.series + " :  series "
 
 
 
 // nrssmo  for each favorite
 
 favoriteLista.innerHTML = favCards.map(cardInFav => `
-    <div class ="flex items-center gap-2 bg-gray-700 rounded p-2">
+    <div class ="flex items-center gap-2 bg-purple-900 rounded p-2">
     <img src ="${cardInFav.image}" alt ="${cardInFav.title}" class ="w-10 h-14 object-cover rounded">
     <div class = "flex-1">
     <p class ="font-bold text-sm">${cardInFav.title}</p>
