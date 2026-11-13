@@ -132,6 +132,7 @@ containerCards.addEventListener("click" , (event) => {
     const heartButton = event.target.closest("[data-favorite]")
 
         if(heartButton) {
+            
             event.stopPropagation()   // dont open the modal
           switchFavoriteANDnonFavorite(heartButton.dataset.favorite) // add or remove lcard id mn fav 3an tari9 heart button
             updatelPage()
