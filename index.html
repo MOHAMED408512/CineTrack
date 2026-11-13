@@ -14,40 +14,111 @@
         <h1 class=" text-xl font-bold text-purple-700">CineTrack</h1>
     </div>
     
+
+
     
 </header>
 
-<main>
 
 
 
 
 
+<main class ="pr-80">
+
+
+        <!-- // search bar w filter -->
 
 
 
-    <!-- // search bar w filter -->
-    <div class ="flex flex-wrap items-center mb-4 gap-4">
-        <input id ="searchInput" type ="text" placeholder="Rechercher.." class ="p-2 rounded bg-purple-800 border ml-4 w-70">
-    
 
-<!-- // filter drt value bx nder ra listner whd ila drt id 5sne 3 -->
+    <div class="flex flex-wrap items-center mb-4 gap-4">
+        <input id ="searchInput" type ="text" class="p-2 rounded bg-purple-800 ml-4 w-70" placeholder="Rechercher....">
+        
 
 
-<select id ="typeSelect" class ="p-2 rounded bg-purple-700">
- 
+        <!-- // filter drt value bx nder ra listner whd ila drt id 5sne 3 -->
+
+
+        <select id ="typeSelect" class ="p-2 rounded bg-purple-800">
+
     <option value ="all">Tous</option> 
-    <option value ="movies">Films</option> 
+    <option value ="movie">Films</option> 
     <option value ="series">Series</option>
+
+</select>
 
 </div>
 
 
 
 
+ <!-- msg error -->
 
+
+     <div id="errorMessage" class ="hidden bg-red-600 text-white p-4 rounded m-4"></div>
+
+
+
+     <!-- container of cards js -->
+
+     
+<div id ="containerCards" class = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-4"></div>
+
+
+
+
+
+<!-- pagintationnnn           
+ flex kderhum f row (justify center() ktcentrihum -->
+<div id ="pagination" class="flex justify-center gap-2 mt-6"></div>
+
+    
 
 </main>
+
+
+
+
+
+
+
     
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- favorite sideBar -->
+
+<aside id ="favoriteBar" class="fixed top-0 right-0 h-full bg-gray-800 p-4 overflow-y-auto w-72 text-white">
+    <h2 class ="text-lg font-bold mb-2">Favoris</h2>
+    <div id ="favoriteCount" class ="text-sm text-gray-400 mb-4"></div>
+    <div id ="favoriteListe" class="flex flex-col gap-2"></div>
+</aside>
+
+
+
+
+
+<!-- info dyl cards -->
+
+<div id ="infoBagroundDark" class="hidden fixed inset-0 bg-black/70 items-center justify-center p-4 z-50">
+<div id ="infoCardContent" class ="bg-purple-500 rounded p-6 max-w-2xl max-h-full overflow-y-auto"></div>
+</div>
+
+
+
+
+<script type="module" src="./js/cinetrack.js"></script>
 </body>
 </html>
